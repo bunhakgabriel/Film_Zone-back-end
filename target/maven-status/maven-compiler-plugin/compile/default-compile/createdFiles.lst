@@ -1,0 +1,6 @@
+com\curso\filmzone\dominio\Filme.class
+com\curso\filmzone\dominio\Movie.class
+com\curso\filmzone\dominio\FilmeApiTmdb.class
+com\curso\filmzone\negocio\Filme.class
+com\curso\filmzone\persistencia\Filme.class
+com\curso\filmzone\FilmZone.class
