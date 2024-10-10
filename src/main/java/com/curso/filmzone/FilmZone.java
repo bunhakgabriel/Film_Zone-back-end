@@ -36,8 +36,8 @@ public class FilmZone {
                 
          com.curso.filmzone.negocio.Filme filmeNeg = new com.curso.filmzone.negocio.Filme(conexao);
             System.err.println("Conexão realizada com sucesso");
-         //filmeNeg.inserir(buscarFilmesApi());
-            filmeNeg.obterFilmeId(1);        
+         filmeNeg.inserir(buscarFilmesApi());
+         //filmeNeg.obterFilmeId(1);        
          
         } catch (Exception e) {
             System.err.println("Error: " + e);
@@ -47,6 +47,7 @@ public class FilmZone {
     
     public static List<Filme> buscarFilmesApi(){
         Scanner scanner = new Scanner(System.in);
+        System.err.println("Digite a pagina: ");
         String param = scanner.nextLine();
         
         HttpClient cliente = HttpClient.newHttpClient();
